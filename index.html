@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ticket Amount Calculator</title>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+	<h1 class="heading">Enter the detials</h1>
+	<form id="form_validate">
+		<div class="row">
+			<div class="col-md-4">
+				<label for="select_dropdown">Class:</label>
+				<select class="form-select " id="select_dropdown" name="select_dropdown">
+  					<option selected value="">Select Class</option>
+  					<option value="silver">Silver</option>
+  					<option value="gold">Gold</option>
+  					<option value="platinum">Platinum</option>
+				</select>
+			</div>
+			<div class="form-group col-md-4">
+    			<label for="adults">Adults:</label>
+    			<input type="text" class="form-control" id="adults" name="adults" placeholder="No.of.Adults" autofocus>
+  			</div>
+  			<div class="form-group col-md-4">
+    			<label for="kids">Kids:</label>
+    			<input type="text" class="form-control" id="kids" name="kids" placeholder="No.of.Kids">
+  			</div>
+		</div>
+		<div class="button_div">
+		<button type="submit" id="submit_button" class="btn btn-secondary">Calculate</button>
+		</div>
+		<h3 id="total_amount" class="heading">total amount <b></b></h3>
+	</form>
+</body>
+<script type="text/javascript" src="scripts/jQuery.js"></script>
+<script type="text/javascript" src="scripts/jQuery_validate.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+
+</html>
